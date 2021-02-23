@@ -1,0 +1,24 @@
+{
+  "name": "islamic-study",
+  "version": "1.0.0",
+  "description": "This a website in which you will get the information od Islam",
+  "main": "index.js",
+  "scripts": {
+    "format": "compressed",
+    "build-css": "node-sass --include-path scss sass/style.scss   assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramishscrapper/Islamic-study.git"
+  },
+  "author": "Ramish Hassan Riaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ramishscrapper/Islamic-study/issues"
+  },
+  "homepage": "https://github.com/Ramishscrapper/Islamic-study#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
