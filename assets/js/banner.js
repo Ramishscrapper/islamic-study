@@ -7,6 +7,6 @@ $(document).ready(function () {
         autoplay:true,
         autoplaySpeed:1000,
         smartSpeed:1500,
-        // autoplayHoverPause:true
+        autoplayHoverPause:true
     });
 });

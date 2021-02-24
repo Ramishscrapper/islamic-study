@@ -181,6 +181,8 @@ span {
     background-image: url("../images/coming-soon.jpg"); }
   .wallpaper .slide-2 {
     background-image: url("../images/Allah-title-img.png"); }
+  .wallpaper .slide-3 {
+    background-image: url("../images/prophet-Muhammad(S.A.W).png"); }
   .wallpaper .slide::before {
     content: "";
     position: absolute;
@@ -199,29 +201,36 @@ span {
     @media (max-width: 425px) {
       .wallpaper .slide-content {
         padding: 0 20px; } }
-  .wallpaper .slide-content h1 {
-    font-family: "Kaushan Script", cursive;
-    font-size: 45px;
-    text-transform: uppercase; }
-    @media (max-width: 425px) {
-      .wallpaper .slide-content h1 {
-        font-size: 24px; } }
-  .wallpaper .slide-content p {
-    font-family: "Kaushan Script", cursive;
-    font-size: 18px;
-    margin-bottom: 20px; }
-  .wallpaper .slide-content .download-btn {
-    font-family: "Kaushan Script", cursive;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding: 10px 25px;
-    color: #fff;
-    background: #2bae66ff; }
-    @media (max-width: 425px) {
-      .wallpaper .slide-content .download-btn {
-        font-size: 14px;
-        padding: 10px; } }
+    .wallpaper .slide-content h1 {
+      font-family: "Kaushan Script", cursive;
+      font-size: 45px;
+      text-transform: uppercase; }
+      @media (max-width: 425px) {
+        .wallpaper .slide-content h1 {
+          font-size: 24px; } }
+    .wallpaper .slide-content p {
+      font-family: "Kaushan Script", cursive;
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .wallpaper .slide-content .download-btn {
+      font-family: "Kaushan Script", cursive;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      padding: 10px 25px;
+      color: #fff;
+      background: #2bae66ff;
+      border: 1px solid #2bae66ff;
+      border-radius: 5px !important; }
+      .wallpaper .slide-content .download-btn:hover span {
+        padding-right: 25px; }
+        .wallpaper .slide-content .download-btn:hover span::after {
+          opacity: 1;
+          right: 0; }
+      @media (max-width: 425px) {
+        .wallpaper .slide-content .download-btn {
+          font-size: 14px;
+          padding: 10px; } }
   .wallpaper .owl-dots {
     width: 100%;
     text-align: center;
@@ -230,6 +239,10 @@ span {
     .wallpaper .owl-dots span {
       width: 20px !important;
       height: 20px !important; }
+      @media (max-width: 425px) {
+        .wallpaper .owl-dots span {
+          width: 10px !important;
+          height: 10px !important; } }
     .wallpaper .owl-dots button {
       border: none !important;
       outline: none !important; }
@@ -248,7 +261,7 @@ span {
     @media (max-width: 425px) {
       .wallpaper .owl-prev,
       .wallpaper .owl-next {
-        display: none; } }
+        display: none !important; } }
   .wallpaper .owl-prev {
     left: 1%; }
   .wallpaper .owl-next {
