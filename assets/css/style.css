@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +17,10 @@ img {
 
 #name-section {
   transition: 1s all ease; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
 
 a,
 p,
@@ -95,6 +104,9 @@ span {
 .quran {
   margin: 100px;
   position: relative; }
+  @media (max-width: 425px) {
+    .quran {
+      margin: 30px; } }
   .quran .surah {
     background-color: #ccc;
     color: #222222;
@@ -117,10 +129,15 @@ span {
       color: #777;
       float: right;
       margin-left: 5px; }
+      .quran .surah:after:hover {
+        background-color: #ccc; }
   .quran .quran-surah-title {
     text-align: center;
     font-size: 3rem;
     font-weight: 700; }
+    @media (max-width: 425px) {
+      .quran .quran-surah-title {
+        font-size: 2rem; } }
   .quran .active {
     background-color: #ccc; }
     .quran .active:after {
@@ -148,6 +165,81 @@ span {
     width: 100%;
     max-width: 40%; }
 
+.wallpaper {
+  font-family: "Kaushan Script", cursive; }
+  .wallpaper .owl-carousel {
+    width: 100%;
+    height: 100vh; }
+  .wallpaper .slide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .wallpaper .slide-1 {
+    background-image: url("../images/coming-soon.jpg"); }
+  .wallpaper .slide-2 {
+    background-image: url("../images/Allah-title-img.png"); }
+  .wallpaper .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .wallpaper .slide-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    padding: 0 20%; }
+  .wallpaper .slide-content h1 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 45px;
+    text-transform: uppercase; }
+  .wallpaper .slide-content p {
+    font-family: "Kaushan Script", cursive;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .wallpaper .slide-content .download-btn {
+    font-family: "Kaushan Script", cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px 25px;
+    color: #fff;
+    background: #2bae66ff; }
+  .wallpaper .owl-dots {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 1%; }
+  .wallpaper .owl-dots span {
+    width: 20px !important;
+    height: 20px !important; }
+  .wallpaper .owl-dots button {
+    border: none !important;
+    outline: none !important; }
+  .wallpaper .owl-nav button {
+    border: none !important;
+    outline: none !important; }
+  .wallpaper .owl-prev,
+  .wallpaper .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff !important;
+    font-size: 65px !important;
+    font-weight: bolder !important;
+    background: none !important; }
+  .wallpaper .owl-prev {
+    left: 1%; }
+  .wallpaper .owl-next {
+    right: 1%; }
+
 header {
   background: #111827; }
   header nav {
@@ -158,6 +250,8 @@ header {
       margin: 20px 50px;
       color: #fff;
       font-weight: 700; }
+      header nav .logo a {
+        font-family: "Kaushan Script", cursive; }
 
 .menu-wrap {
   width: 100%;
