@@ -196,10 +196,16 @@ span {
     transform: translateY(-50%);
     color: #fff;
     padding: 0 20%; }
+    @media (max-width: 425px) {
+      .wallpaper .slide-content {
+        padding: 0 20px; } }
   .wallpaper .slide-content h1 {
     font-family: "Kaushan Script", cursive;
     font-size: 45px;
     text-transform: uppercase; }
+    @media (max-width: 425px) {
+      .wallpaper .slide-content h1 {
+        font-size: 24px; } }
   .wallpaper .slide-content p {
     font-family: "Kaushan Script", cursive;
     font-size: 18px;
@@ -212,17 +218,21 @@ span {
     padding: 10px 25px;
     color: #fff;
     background: #2bae66ff; }
+    @media (max-width: 425px) {
+      .wallpaper .slide-content .download-btn {
+        font-size: 14px;
+        padding: 10px; } }
   .wallpaper .owl-dots {
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: 1%; }
-  .wallpaper .owl-dots span {
-    width: 20px !important;
-    height: 20px !important; }
-  .wallpaper .owl-dots button {
-    border: none !important;
-    outline: none !important; }
+    .wallpaper .owl-dots span {
+      width: 20px !important;
+      height: 20px !important; }
+    .wallpaper .owl-dots button {
+      border: none !important;
+      outline: none !important; }
   .wallpaper .owl-nav button {
     border: none !important;
     outline: none !important; }
@@ -235,6 +245,10 @@ span {
     font-size: 65px !important;
     font-weight: bolder !important;
     background: none !important; }
+    @media (max-width: 425px) {
+      .wallpaper .owl-prev,
+      .wallpaper .owl-next {
+        display: none; } }
   .wallpaper .owl-prev {
     left: 1%; }
   .wallpaper .owl-next {
