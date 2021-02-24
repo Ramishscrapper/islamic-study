@@ -222,11 +222,6 @@ span {
       background: #2bae66ff;
       border: 1px solid #2bae66ff;
       border-radius: 5px !important; }
-      .wallpaper .slide-content .download-btn:hover span {
-        padding-right: 25px; }
-        .wallpaper .slide-content .download-btn:hover span::after {
-          opacity: 1;
-          right: 0; }
       @media (max-width: 425px) {
         .wallpaper .slide-content .download-btn {
           font-size: 14px;
