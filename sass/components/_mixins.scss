@@ -1,0 +1,17 @@
+@mixin home-img {
+  &:hover {
+    transform: scale(1.1);
+    transition: 2s ease;
+  }
+}
+@mixin btn-hover {
+  &:hover {
+    span {
+      padding-right: 25px;
+      &::after {
+        opacity: 1;
+        right: 0;
+      }
+    }
+  }
+}

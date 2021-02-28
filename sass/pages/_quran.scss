@@ -1,0 +1,69 @@
+@import "../components/variables";
+.quran {
+  margin: 100px;
+  position: relative;
+  @media (max-width: 425px) {
+    margin: 30px;
+  }
+  .surah {
+    background-color: $light-white;
+    color: $black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 1s;
+    border: 1px solid $grey;
+    &:first-child {
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: $grey;
+    }
+    &:after {
+      content: "\02795";
+      font-size: 13px;
+      color: $light-grey;
+      float: right;
+      margin-left: 5px;
+      &:hover {
+        background-color: $light-white;
+      }
+    }
+  }
+  .quran-surah-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    @media (max-width: 425px) {
+      font-size: 2rem;
+    }
+  }
+  .active {
+    background-color: $light-white;
+    &:after {
+      content: "\2796";
+    }
+  }
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: $white;
+    overflow: hidden;
+    iframe {
+      margin: 20px auto;
+      width: 100%;
+    }
+  }
+  .surah-details {
+    font-weight: bold;
+  }
+  @media (max-width: 425px) {
+    .quran {
+      margin: 30px;
+    }
+  }
+}
