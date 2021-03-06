@@ -18,6 +18,11 @@ img {
 #name-section {
   transition: 1s all ease; }
 
+iframe {
+  width: 100%;
+  margin: 20px auto;
+  aspect-ratio: 16/9; }
+
 a {
   cursor: pointer;
   text-decoration: none; }
@@ -147,9 +152,6 @@ span {
     display: none;
     background-color: #fff;
     overflow: hidden; }
-    .quran .panel iframe {
-      margin: 20px auto;
-      width: 100%; }
   .quran .surah-details {
     font-weight: bold; }
   @media (max-width: 425px) {

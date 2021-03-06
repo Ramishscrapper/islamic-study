@@ -14,6 +14,11 @@ img {
 #name-section {
   transition: 1s all ease;
 }
+iframe {
+  width: 100%;
+  margin: 20px auto;
+  aspect-ratio: 16/9;
+}
 a {
   cursor: pointer;
   text-decoration: none;
