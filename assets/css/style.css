@@ -178,13 +178,16 @@ span {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center; }
   .wallpaper .slide-1 {
-    background-image: url("../images/coming-soon.jpg"); }
+    background-image: url("../images/coming-soon.jpg");
+    background-size: cover; }
   .wallpaper .slide-2 {
-    background-image: url("../images/Allah-title-img.png"); }
+    background-image: url("../images/Allah-title-img.png");
+    background-size: cover; }
   .wallpaper .slide-3 {
-    background-image: url("../images/prophet-Muhammad(S.A.W).png"); }
+    background-image: url("../images/prophet-Muhammad(S.A.W).png");
+    background-size: cover; }
   .wallpaper .slide::before {
     content: "";
     position: absolute;
