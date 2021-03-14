@@ -6,6 +6,7 @@
   .owl-carousel {
     width: 100%;
     height: 100vh;
+    aspect-ratio: 16/9;
   }
 
   .slide {
@@ -19,14 +20,17 @@
   .slide-1 {
     background-image: url("../images/coming-soon.jpg");
     background-size: cover;
+    aspect-ratio: 16/9;
   }
   .slide-2 {
     background-image: url("../images/Allah-title-img.png");
     background-size: cover;
+    aspect-ratio: 16/9;
   }
   .slide-3 {
     background-image: url("../images/prophet-Muhammad(S.A.W).png");
     background-size: cover;
+    aspect-ratio: 16/9;
   }
 
   .slide::before {

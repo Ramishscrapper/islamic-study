@@ -200,7 +200,8 @@ button {
   font-family: "Kaushan Script", cursive; }
   .wallpaper .owl-carousel {
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+    aspect-ratio: 16/9; }
   .wallpaper .slide {
     width: 100%;
     height: 100vh;
@@ -210,13 +211,16 @@ button {
     background-position: center; }
   .wallpaper .slide-1 {
     background-image: url("../images/coming-soon.jpg");
-    background-size: cover; }
+    background-size: cover;
+    aspect-ratio: 16/9; }
   .wallpaper .slide-2 {
     background-image: url("../images/Allah-title-img.png");
-    background-size: cover; }
+    background-size: cover;
+    aspect-ratio: 16/9; }
   .wallpaper .slide-3 {
     background-image: url("../images/prophet-Muhammad(S.A.W).png");
-    background-size: cover; }
+    background-size: cover;
+    aspect-ratio: 16/9; }
   .wallpaper .slide::before {
     content: "";
     position: absolute;
