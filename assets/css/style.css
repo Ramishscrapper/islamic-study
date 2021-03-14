@@ -106,6 +106,9 @@ span {
 .translation {
   font-weight: 700 !important; }
 
+button {
+  border: none; }
+
 .quran {
   margin: 100px;
   position: relative;
@@ -292,6 +295,34 @@ span {
     left: 1%; }
   .wallpaper .owl-next {
     right: 1%; }
+  .wallpaper .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px; }
+  .wallpaper .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px; }
+  .wallpaper .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%; }
+  @media screen and (max-width: 800px) {
+    .wallpaper .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 600px) {
+    .wallpaper .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%; } }
+  .wallpaper button {
+    padding: 10px 30px;
+    background: #ccc; }
 
 header {
   background: #111827; }

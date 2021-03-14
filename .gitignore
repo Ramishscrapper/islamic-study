@@ -3,3 +3,5 @@ node_modules/
 package-lock.json
 package.json
 style.css.map
+sass/
+demp.html

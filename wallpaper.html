@@ -25,107 +25,8 @@
     />
 
     <title>Wallpaper</title>
-    <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
   </head>
   <body class="wallpaper">
-    <div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="assets/images/kalma.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/coming-soon.jpg  " style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-  </div>
-  <div class="column">
-     <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-   <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/favicon.png" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/Allah-title-img.png" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/prophet-Muhammad(S.A.W).png" style="width:100%">
-  </div>
-  <div class="column">
-   <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-    <img src="assets/images/bismillah.jpg" style="width:100%">
-  </div>
-</div>
 
     <div class="owl-carousel owl-theme">
 
@@ -198,21 +99,60 @@ body {
 <h1>Ramish Hassan Riaz</h1>
 
 <!-- Tabs -->
-<div class="surah-tab">
+<div class="tags">
   <button class="tablinks" onclick="openCity(event, 'Allah(S.W.T)')">Allah(S.W.T)</button>
   <button class="tablinks" onclick="openCity(event, 'Hazrat Muhammad (S.A.W)')">Hazrat Muhammad (S.A.W)</button>
   <button class="tablinks" onclick="openCity(event, 'Quran')">Quran</button>
 </div>
 
-<div id="Allah(S.W.T)" class="tabcontent" style="display: block;">
+<div id="Allah(S.W.T)" class="tagContent" style="display: block;">
   <h3>Allah(S.W.T)</h3>
+  <!-- Photo Gallery -->
+    <div class="row"> 
+      <div class="column">
+        <img src="assets/images/kalma.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/coming-soon.jpg  " style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+      </div>  
+      <div class="column">
+      <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/favicon.png" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/Allah-title-img.png" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/prophet-Muhammad(S.A.W).png" style="width:100%">
+      </div>
+      <div class="column">
+      <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+        <img src="assets/images/bismillah.jpg" style="width:100%">
+      </div>
+</div>
 </div>
 
-<div id="Hazrat Muhammad (S.A.W)" class="tabcontent">
+<div id="Hazrat Muhammad (S.A.W)" class="tagContent">
   <h3>Hazrat Muhammad (S.A.W)</h3>
 </div>
 
-<div id="Quran" class="tabcontent">
+<div id="Quran" class="tagContent">
   <h3>Quran</h3>
 </div>
 
