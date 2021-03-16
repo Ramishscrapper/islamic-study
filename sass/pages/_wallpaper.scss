@@ -44,4 +44,12 @@ button{
   padding: 10px 30px;
   background: $light-white;
 }
+img{
+  transition: 1s all ease-in;
+  overflow: hidden;
+  &:hover{
+    transform: scale(1.3);
+    transition: 1s all ease-in;
+  }
+}
 }
