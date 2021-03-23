@@ -4,8 +4,7 @@
   "description": "This a website in which you will get the information od Islam",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss sass/style.scss   assets/css/style.css",
-    "format": "compressed"
+    "build-css": "node-sass --include-path scss sass/style.scss   assets/css/style.css compressed"
   },
   "repository": {
     "type": "git",
