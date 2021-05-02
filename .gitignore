@@ -1,7 +1,6 @@
 #ignoring the scss files
 node_modules/
 sass/
-demp.html
 package-lock.json
 package.json
 style.css.map

@@ -1,3 +1,39 @@
+.hero-banner {
+  background-image: url("../../assets/images/mosque.jpg");
+  position: relative;
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .typing-effect {
+    font-size: 3em;
+    font-weight: bold;
+    color: $white;
+    font-family: monospace;
+    transform: scale(1.4);
+    border-right: 2px solid;
+    width: 24ch;
+    white-space: nowrap;
+    animation: typing 4s steps(29), cursor 0.5s step-end infinite alternate;
+    overflow: hidden;
+    @media (max-width: 667px) {
+      font-size: 17px;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
 .banner {
   display: flex;
   justify-content: center;
@@ -6,5 +42,89 @@
   img {
     width: 100%;
     max-width: 40%;
+  }
+}
+.wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+
+/* simple contact form */
+.contact-form {
+  background: $darkblue;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.form-mid {
+  background: $white;
+  padding: 3rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+.form-mid {
+  form {
+    input,
+    textarea {
+      background: #f8f9fa;
+      border: 2px solid rgba(216, 216, 216, 0.3);
+      color: #777;
+      font-size: 16px;
+      padding: 12px 15px;
+      width: 100%;
+      border-radius: 4px;
+      height: 55px;
+    }
+  }
+  textarea {
+    resize: none;
+    min-height: 140px;
+  }
+}
+
+.form-mid form input:focus,
+.form-mid form textarea:focus {
+  outline: none;
+  border: 2px solid $darkblue;
+  background: $white;
+  box-shadow: none;
+}
+
+button.btn-contact {
+  @extend %name-btn;
+}
+
+@media (max-width: 568px) {
+  .form-mid {
+    padding: 1.5rem;
   }
 }

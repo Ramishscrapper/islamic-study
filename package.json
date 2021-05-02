@@ -1,23 +1,25 @@
 {
-  "name": "islamic-study",
+  "name": "Islamic-study",
   "version": "1.0.0",
-  "description": "This a website in which you will get the information od Islam",
+  "description": "In shaa Allah,",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss sass/style.scss   assets/css/style.css compressed"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass sass/style.scss assets/css/index.css",
+    "watch-sass": "node-sass -w sass/style.scss assets/css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ramishscrapper/Islamic-study.git"
   },
-  "author": "Ramish Hassan Riaz",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ramishscrapper/Islamic-study/issues"
   },
   "homepage": "https://github.com/Ramishscrapper/Islamic-study#readme",
-  "devDependencies": {
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
+  "dependencies": {
+    "node-sass": "^5.0.0"
   }
 }
