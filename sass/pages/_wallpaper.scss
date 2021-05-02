@@ -1,0 +1,120 @@
+.wallpaper {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .static {
+    position: static;
+    margin: 0 auto;
+  }
+  .cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .owl-carousel {
+    .owl-slide {
+      position: relative;
+      height: 100vh;
+      background-color: $light-grey;
+    }
+    .owl-slide-animated {
+      transform: translateX(20px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.05s;
+    }
+    .owl-slide-animated.is-transitioned {
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s;
+    }
+    .owl-slide-title.is-transitioned {
+      transition-delay: 0.2s;
+    }
+    .owl-slide-subtitle.is-transitioned {
+      transition-delay: 0.35s;
+    }
+    .owl-slide-cta.is-transitioned {
+      transition-delay: 0.5s;
+    }
+    .owl-dots {
+      position: absolute;
+      left: 50% !important;
+      top: 94% !important;
+      transform: translateX(-50%);
+      .owl-dot {
+        outline: none;
+        span {
+          width: 30px !important;
+          height: 6px !important;
+          background: $grey;
+          border: 1px solid background $black;
+          transition: all 0.2s ease;
+        }
+        &:hover {
+          span {
+            background: $black;
+          }
+        }
+      }
+      .owl-dot.active {
+        span {
+          background: $black;
+        }
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50% !important;
+      transform: translateX(-50%);
+      margin: 0;
+      .owl-prev {
+        float: left;
+      }
+      .owl-next {
+        float: right;
+      }
+      [class*="owl-"] {
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          background: transparent;
+        }
+      }
+      svg {
+        opacity: 0.3;
+        transition: opacity 0.3s;
+      }
+      button {
+        &:hover {
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  section {
+    display: none;
+  }
+  @media screen and (max-width: 575px) {
+    .owl-carousel {
+      .owl-nav {
+        top: 5%;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .btn-primary {
+    @extend %name-btn;
+  }
+}
