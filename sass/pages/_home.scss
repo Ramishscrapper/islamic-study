@@ -1,6 +1,8 @@
 .hero-banner {
   background-image: url("../../assets/images/mosque.jpg");
   position: relative;
+  background-position: center;
+  background-attachment: fixed;
   .container {
     min-height: 100vh;
     display: flex;
