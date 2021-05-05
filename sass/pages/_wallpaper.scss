@@ -117,4 +117,61 @@
   .btn-primary {
     @extend %name-btn;
   }
+  /* Center website */
+  .main {
+    margin: 0 auto;
+    h1,
+    h2 {
+      text-align: center;
+    }
+  }
+
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+    @media (max-width: $tablet) {
+      width: 50%;
+    }
+    @media (max-width: $mobile-large) {
+      width: 100%;
+    }
+  }
+
+  /* Content */
+  .content {
+    background-color: $light-grey;
+    padding: 10px;
+  }
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  /* Style the buttons */
+  .btn {
+    @extend %name-btn;
+    border-radius: 50px;
+    transition: 0.5s all ease;
+    &:hover {
+      background-color: $white;
+      color: $light-green;
+      border: 1px solid $light-green;
+      transition: 0.5s all ease;
+    }
+    &:active {
+      background-color: $white;
+      box-shadow: 1px $light-green;
+      color: $light-green;
+      border: 1px solid $light-green;
+    }
+  }
 }
