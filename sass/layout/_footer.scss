@@ -8,4 +8,58 @@ footer {
     color: #fff;
     padding: 10px;
   }
+
+  /* simple contact form */
+  .contact-form {
+    background: $darkblue;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .field {
+    margin-bottom: 20px;
+  }
+
+  .form-mid {
+    background: transparent;
+    padding: 3rem;
+    border-radius: 4px;
+  }
+  .form-mid {
+    form {
+      input,
+      textarea {
+        background: #f8f9fa;
+        border: 2px solid rgba(216, 216, 216, 0.3);
+        color: #777;
+        font-size: 16px;
+        padding: 12px 15px;
+        width: 100%;
+        border-radius: 4px;
+        height: 55px;
+      }
+    }
+    textarea {
+      resize: none;
+      min-height: 140px;
+    }
+  }
+
+  .form-mid form input:focus,
+  .form-mid form textarea:focus {
+    outline: none;
+    border: 2px solid $darkblue;
+    background: $white;
+    box-shadow: none;
+  }
+
+  button.btn-contact {
+    @extend %name-btn;
+  }
+
+  @media (max-width: 568px) {
+    .form-mid {
+      padding: 0;
+    }
+  }
 }

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass sass/style.scss assets/css/index.css",
+    "sass": "sass sass/style.scss assets/css/style.css",
     "watch-sass": "node-sass -w sass/style.scss assets/css/style.css --output-style compressed"
   },
   "repository": {
