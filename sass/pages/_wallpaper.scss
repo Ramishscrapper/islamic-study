@@ -127,8 +127,7 @@
   }
 
   /* Add padding BETWEEN each column */
-  .row,
-  .row > .column {
+  .row {
     padding: 8px;
   }
 
@@ -156,22 +155,78 @@
   .show {
     display: block;
   }
-  /* Style the buttons */
-  .btn {
-    @extend %name-btn;
-    border-radius: 50px;
-    transition: 0.5s all ease;
-    &:hover {
-      background-color: $white;
-      color: $light-green;
-      border: 1px solid $light-green;
-      transition: 0.5s all ease;
+
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab {
+    margin-left: 10px !important;
+    button {
+      @extend %name-btn;
+      @include btn-hover-effect;
     }
-    &:active {
-      background-color: $white;
-      box-shadow: 1px $light-green;
-      color: $light-green;
-      border: 1px solid $light-green;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .wallpaper-img {
+    overflow: hidden;
+    transition: 1s all ease;
+    border: 5px solid $white;
+    img {
+      transition: 1s all ease;
+      overflow: hidden;
+      padding: 20px 0;
+      &:hover {
+        transition: 1s all ease;
+        transform: scale(1.05);
+      }
     }
   }
 }
