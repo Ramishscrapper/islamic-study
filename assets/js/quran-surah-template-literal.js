@@ -811,10 +811,9 @@ function quranSurahTemplate(surah) {
           <button class="surah surahName">${surah.number} : ${surah.name}</button>
           <div class="panel">
             <ul>
-              <li><span class="surah-details">No. of verses</span>${surah.englishName}</li>
-              <li><span class="surah-details">No. of rukus</span> ${surah.englishNameTranslation}</li>
-              <li><span class="surah-details">No. of rukus</span> ${surah.revelationType}</li>
-              <li><span class="surah-details">No. of rukus</span> ${surah.numberOfAyahs}</li>
+              <li><span class="surah-details">Surah English Name : </span>${surah.englishName}</li>
+              <li><span class="surah-details">Surah English Name Translation : </span> ${surah.englishNameTranslation}</li>
+              <li><span class="surah-details">No. of Verses : </span> ${surah.numberOfAyahs}</li>
             </ul>
             ${surah.iframe}
           </div>
