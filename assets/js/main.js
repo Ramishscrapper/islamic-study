@@ -42,7 +42,7 @@ class WebsiteFooter extends HTMLElement {
                                 Contact
                             </h1>
                             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                                If you have any suggestion and see improvements in any section feel free to suggest me
+                                If you find any mistake and see improvements in any section feel free to suggest me
                             </p>
                         </div>
                         <!-- contact1 -->
