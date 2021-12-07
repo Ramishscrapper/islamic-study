@@ -6,11 +6,11 @@ function sendmail() {
 
   var Body = `
             ${name}
-
+          <br />
             ${email}
-
+          <br />
             ${subject}
-
+          <br />
             ${message}
     `;
 
