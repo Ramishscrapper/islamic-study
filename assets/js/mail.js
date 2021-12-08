@@ -5,13 +5,13 @@ function sendmail() {
   var message = $("#Message").val();
 
   var Body = `
-            ${name}
+            Name: ${name}
           <br />
-            ${email}
+            Email: ${email}
           <br />
-            ${subject}
+            Subject: ${subject}
           <br />
-            ${message}
+            Message: ${message}
     `;
 
   Email.send({
