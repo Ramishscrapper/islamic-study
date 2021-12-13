@@ -1,3 +1,4 @@
+// Header Web Component
 class WebsiteHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -30,7 +31,9 @@ class WebsiteHeader extends HTMLElement {
         `;
   }
 }
+customElements.define("website-header", WebsiteHeader);
 
+// Footer Web Component
 class WebsiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `       
@@ -125,5 +128,59 @@ class WebsiteFooter extends HTMLElement {
         `;
   }
 }
-customElements.define("website-header", WebsiteHeader);
 customElements.define("website-footer", WebsiteFooter);
+
+// Adding the Custom Cursor Configuration
+new kursor({
+  type: 1,
+  removeDefaultCursor: true,
+});
+
+// Adding Animation Duration in the AOS Animation
+AOS.init({
+  offset: 350,
+  delay: 0,
+  duration: 1000,
+});
+
+// Quran Surah Tabs
+$(document).ready(function () {
+  var surahName = $(".surahName");
+  $(surahName).next(".panel").hide();
+  $(surahName).on("click", function () {
+    $(this).next(".panel").stop(500).slideToggle();
+    $(this).toggleClass("active");
+  });
+});
+
+// Mail Form Functionality
+function sendmail() {
+  var name = $("#Name").val();
+  var email = $("#Sender").val();
+  var subject = $("#Subject").val();
+  var message = $("#Message").val();
+
+  var Body = `
+            Name: ${name}
+          <br />
+            Email: ${email}
+          <br />
+            Subject: ${subject}
+          <br />
+            Message: ${message}
+    `;
+
+  Email.send({
+    SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+    To: "ramishscrapper@gmail.com",
+    From: `${email}`,
+    Subject: `New message on contact from: ${name}`,
+    Body: Body,
+  }).then((message) => {
+    if (message == "OK") {
+      alert("Your mail has been send. Thank you for connecting.");
+    } else {
+      alert("There is error at sending message. ");
+    }
+  });
+}
