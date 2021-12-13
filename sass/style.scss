@@ -1,0 +1,18 @@
+// Importing the other Sass files and merging it
+
+// Importing the components of the website
+@import "components/mixins";
+@import "components/typography";
+@import "components/variables";
+@import "components/maxbreakpoint";
+@import "components/basics";
+@import "components/buttons";
+@import "components/mail-form";
+
+//Importing the pages of the website
+@import "pages/quran";
+@import "pages/home";
+
+//Importing the Layout of the website
+@import "layout/navbar";
+@import "layout/footer";

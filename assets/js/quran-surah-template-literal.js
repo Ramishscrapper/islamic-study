@@ -5,6 +5,9 @@ var quranSurahData = [
     englishName: "Al-Faatiha",
     englishNameTranslation: "The Opening",
     numberOfAyahs: 7,
+    iframe: `
+    <iframe src="https://www.youtube.com/embed/U-xe51aveBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `,
   },
   {
     number: 2,
@@ -12,6 +15,9 @@ var quranSurahData = [
     englishName: "Al-Baqara",
     englishNameTranslation: "The Cow",
     numberOfAyahs: 286,
+    iframe: `
+    <iframe src="https://www.youtube.com/embed/ZjZneawVueY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `,
   },
   {
     number: 3,
@@ -19,6 +25,9 @@ var quranSurahData = [
     englishName: "Aal-i-Imraan",
     englishNameTranslation: "The Family of Imraan",
     numberOfAyahs: 200,
+    iframe: `
+    <iframe src="https://www.youtube.com/embed/7GtrxKxv6K4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `,
   },
   {
     number: 4,
@@ -26,6 +35,9 @@ var quranSurahData = [
     englishName: "An-Nisaa",
     englishNameTranslation: "The Women",
     numberOfAyahs: 176,
+    iframe: `
+    <iframe src="https://www.youtube.com/embed/V0lKREHK5fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `,
   },
   {
     number: 5,
