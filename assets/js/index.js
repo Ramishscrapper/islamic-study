@@ -84,7 +84,7 @@ class WebsiteFooter extends HTMLElement {
                         <div class="lg:w-1/2 md:w-2/3 mx-auto">
                             <div class="flex flex-wrap -m-2">
                                 <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-                                    <a class="text-teal-500">techwithcoding@gmail.com</a>
+                                    <a class="text-teal-500">ramishscrapper@gmail.com</a>
                                     <br><br>
                                     <span class="inline-flex">
                                             <a class="text-gray-500" href="https://www.facebook.com/TechwithCoding">
