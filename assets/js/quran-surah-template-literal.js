@@ -819,8 +819,8 @@ var quranSurahTemplateStart = `
 // Quran Surah Tab HTML Template
 function quranSurahTemplate(surah) {
   return `
-      <div class="quran-surah-with-tab">
-          <button class="surah surahName" data-surah="Surah ${surah.englishName}">${surah.number} : ${surah.name}</button>
+      <div class="quran-surah-with-tab" data-search="Surah ${surah.englishName}">
+          <button class="surah surahName">${surah.number} : ${surah.name}</button>
           <div class="panel">
             <ul>
               <li><span class="surah-details">Surah English Name : </span>${surah.englishName}</li>
