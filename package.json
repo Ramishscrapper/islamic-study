@@ -1,7 +1,7 @@
 {
   "name": "Islamic-study",
   "version": "1.0.0",
-  "description": "In shaa Allah,",
+  "description": "Allah(S.W.T) is the Supreme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
