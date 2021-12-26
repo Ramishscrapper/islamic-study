@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ramishscrapper/Islamic-study.git"
+    "url": "git+https://github.com/Ramishscrapper/islamic-study.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ramish Hassan Riaz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ramishscrapper/Islamic-study/issues"
+    "url": "https://github.com/Ramishscrapper/islamic-study/issues"
   },
-  "homepage": "https://github.com/Ramishscrapper/Islamic-study#readme",
+  "homepage": "https://github.com/Ramishscrapper/islamic-study#readme",
   "dependencies": {
     "node-sass": "^5.0.0"
   }
