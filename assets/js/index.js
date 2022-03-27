@@ -130,12 +130,6 @@ class WebsiteFooter extends HTMLElement {
 }
 customElements.define("website-footer", WebsiteFooter);
 
-// Adding the Custom Cursor Configuration
-new kursor({
-  type: 1,
-  removeDefaultCursor: true,
-});
-
 // Adding Animation Duration in the AOS Animation
 AOS.init({
   offset: 350,
