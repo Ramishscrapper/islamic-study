@@ -1,5 +1,7 @@
 <div align="center">
 
+# Welcome to Islamic Study
+
 [![Ramishscrapper - islamic-study](https://img.shields.io/static/v1?label=Ramishscrapper&message=islamic-study&color=blue&logo=github)](https://github.com/Ramishscrapper/islamic-study "Go to GitHub repo")
 [![stars - islamic-study](https://img.shields.io/github/stars/Ramishscrapper/islamic-study?style=social)](https://github.com/Ramishscrapper/islamic-study)
 [![forks - islamic-study](https://img.shields.io/github/forks/Ramishscrapper/islamic-study?style=social)](https://github.com/Ramishscrapper/islamic-study)
@@ -42,5 +44,4 @@ Please make sure to update tests as appropriate.
 
 ## 📝 License
 
-Copyright © 2020 [Ramish Hassan Riaz](https://github.com/Ramishscrapper).<br />
-This project is [MIT](https://github.com/Ramishscrapper/islamic-study/blob/master/LICENSE) licensed.
+Released under [MIT](https://github.com/Ramishscrapper/islamic-study/blob/master/LICENSE) by [@Ramishscrapper](https://github.com/Ramishscrapper).
