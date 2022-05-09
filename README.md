@@ -1,4 +1,16 @@
-# Welcome to Islamic Study
+<div align="center">
+
+[![Ramishscrapper - islamic-study](https://img.shields.io/static/v1?label=Ramishscrapper&message=islamic-study&color=blue&logo=github)](https://github.com/Ramishscrapper/islamic-study "Go to GitHub repo")
+[![stars - islamic-study](https://img.shields.io/github/stars/Ramishscrapper/islamic-study?style=social)](https://github.com/Ramishscrapper/islamic-study)
+[![forks - islamic-study](https://img.shields.io/github/forks/Ramishscrapper/islamic-study?style=social)](https://github.com/Ramishscrapper/islamic-study)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![issues - islamic-study](https://img.shields.io/github/issues/Ramishscrapper/islamic-study)](https://github.com/Ramishscrapper/islamic-study/issues)
+
+[![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://ramishscrapper.github.io/islamic-study/)
+
+</div>
+
+## Documentation
 
 It is an Open Source Project for the Everyone who love to contribute.
 
