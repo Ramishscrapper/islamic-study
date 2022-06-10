@@ -1,7 +1,7 @@
 {
   "name": "Islamic study",
   "short_name": "Islamic study",
-  "start_url": "/",
+  "start_url": "https://ramishscrapper.github.io/islamic-study/",
   "display": "standalone",
   "background_color": "#fdfdfd",
   "theme_color": "#111827",
