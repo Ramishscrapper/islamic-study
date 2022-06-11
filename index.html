@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, height=device-height,user-scalable=no, initial-scale=1.0" />
         <meta name="description" content="In this website you will get the Islamic information Quran and Hadith" />
         <meta name="theme-color" content="#0d085c" />
+        <link rel="canonical" href="https://ramishscrapper.github.io/islamic-study/" />
         <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
-
         <link rel="stylesheet" href="assets/css/style.css" />
 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -128,7 +128,18 @@
             crossorigin='anonymous'></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="assets/js/index.js"></script>
-        <script src="assets/js/pwa-handler.js"></script>
+        <!-- register service worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('./service-worker.js')
+                        .then(function () { console.log("Service Worker Registered, Cheers to PWA Fire!"); });
+                }
+                );
+            }
+        </script>
+        <!-- end of service worker -->
+        <!-- <script src="assets/js/pwa-handler.js"></script> -->
     </body>
 
 </html>
