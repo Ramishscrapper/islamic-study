@@ -56,7 +56,7 @@ class WebsiteFooter extends HTMLElement {
                                         <div class="form-mid">
                                             <form id="clearFrom" >
                                                 <div class="field"
-                                                    <label for="name">Name</label>>
+                                                    <label for="name">Name</label>
                                                     <input type="text" class="form-control" name="sName" id="name" placeholder="Name"
                                                         required="">
                                                 </div>

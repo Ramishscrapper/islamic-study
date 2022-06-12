@@ -2,6 +2,11 @@ footer {
   .contact {
     font-weight: 700;
   }
+  .contact-form {
+    label {
+      @include hideText;
+    }
+  }
   .subtite {
     text-align: center;
     background: #111827;
