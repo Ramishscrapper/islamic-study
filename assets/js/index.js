@@ -54,26 +54,28 @@ class WebsiteFooter extends HTMLElement {
                                 <div class="wrapper">
                                     <div class="contact-form" style="margin: 0 auto;">
                                         <div class="form-mid">
-                                            <form action="javascript:sendmail()" method="post">
-                                                <div class="field">
-                                                    <input type="text" class="form-control" name="Name" id="Name" placeholder="Name"
+                                            <form id="clearFrom" >
+                                                <div class="field"
+                                                    <label for="name">Name</label>>
+                                                    <input type="text" class="form-control" name="sName" id="name" placeholder="Name"
                                                         required="">
                                                 </div>
                                                 <div class="field">
-                                                    <input type="email" class="form-control" name="Sender" id="Sender"
+                                                    <label for="email">Email</label>
+                                                    <input type="email" class="form-control" name="sEmail" id="email"
                                                         placeholder="Email"
                                                         required="">
                                                 </div>
                                                 <div class="field">
-                                                    <input type="text" class="form-control" name="Subject" id="Subject"
+                                                    <label for="subject">Subject</label>
+                                                    <input type="text" class="form-control" name="subject" id="subject"
                                                         placeholder="Subject"
                                                         required="">
                                                 </div>
-                                                <textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                                                <label for="message">Message</label>
+                                                <textarea name="sMessage" class="form-control" id="message" placeholder="Message"
                                                         required=""></textarea>
-                                                <button type="submit" class="btn btn-contact">Send Message</button>
-                                                <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
-
+                                                <button type="submit" id="submit" class="btn btn-contact">Send Message</button>
                                             </form>
                                         </div>
                                     </div>
@@ -147,34 +149,34 @@ $(document).ready(function () {
   });
 });
 
-// Mail Form Functionality
-function sendmail() {
-  var name = $("#Name").val();
-  var email = $("#Sender").val();
-  var subject = $("#Subject").val();
-  var message = $("#Message").val();
+// // Mail Form Functionality
+// function sendmail() {
+//   var name = $("#Name").val();
+//   var email = $("#Sender").val();
+//   var subject = $("#Subject").val();
+//   var message = $("#Message").val();
 
-  var Body = `
-            Name: ${name}
-          <br />
-            Email: ${email}
-          <br />
-            Subject: ${subject}
-          <br />
-            Message: ${message}
-    `;
+//   var Body = `
+//             Name: ${name}
+//           <br />
+//             Email: ${email}
+//           <br />
+//             Subject: ${subject}
+//           <br />
+//             Message: ${message}
+//     `;
 
-  Email.send({
-    SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-    To: "ramishscrapper@gmail.com",
-    From: `${email}`,
-    Subject: `New message on contact from: ${name}`,
-    Body: Body,
-  }).then((message) => {
-    if (message == "OK") {
-      alert("Your mail has been send. Thank you for connecting.");
-    } else {
-      alert("There is error at sending message. ");
-    }
-  });
-}
+//   Email.send({
+//     SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+//     To: "ramishscrapper@gmail.com",
+//     From: `${email}`,
+//     Subject: `New message on contact from: ${name}`,
+//     Body: Body,
+//   }).then((message) => {
+//     if (message == "OK") {
+//       alert("Your mail has been send. Thank you for connecting.");
+//     } else {
+//       alert("There is error at sending message. ");
+//     }
+//   });
+// }
