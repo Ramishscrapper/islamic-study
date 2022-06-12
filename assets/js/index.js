@@ -55,26 +55,26 @@ class WebsiteFooter extends HTMLElement {
                                     <div class="contact-form" style="margin: 0 auto;">
                                         <div class="form-mid">
                                             <form id="clearFrom" >
-                                                <div class="field"
+                                                <div class="field">
                                                     <label for="name">Name</label>
                                                     <input type="text" class="form-control" name="sName" id="name" placeholder="Name"
-                                                        required="">
+                                                        required />
                                                 </div>
                                                 <div class="field">
                                                     <label for="email">Email</label>
                                                     <input type="email" class="form-control" name="sEmail" id="email"
                                                         placeholder="Email"
-                                                        required="">
+                                                        required />
                                                 </div>
                                                 <div class="field">
                                                     <label for="subject">Subject</label>
                                                     <input type="text" class="form-control" name="subject" id="subject"
                                                         placeholder="Subject"
-                                                        required="">
+                                                        required />
                                                 </div>
                                                 <label for="message">Message</label>
                                                 <textarea name="sMessage" class="form-control" id="message" placeholder="Message"
-                                                        required=""></textarea>
+                                                        required></textarea>
                                                 <button type="submit" id="submit" class="btn btn-contact">Send Message</button>
                                             </form>
                                         </div>
