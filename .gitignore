@@ -1,0 +1,10 @@
+#ignoring the Node Module Folder
+node_modules/
+package-lock.json
+package.json
+
+#Ignore the extra files
+style.css.map
+desktop.ini
+.idea/
+.vscode/
