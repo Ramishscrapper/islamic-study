@@ -24,6 +24,7 @@
         // generate the list of possible URLs that a user might load.               
                 '/', // do not remove this
                 '/index.html', //default
+                '/quran.html', //default
                 '/assets/js/*', //default
                 '/assets/css/*',// configure as by your site ; just an example
                 '/assets/images/*',// choose images to keep offline; just an example
