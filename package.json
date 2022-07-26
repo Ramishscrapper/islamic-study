@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Ramishscrapper/islamic-study",
   "dependencies": {
     "firebase": "^9.8.3",
+    "firebase-tools": "^11.0.1",
     "node-sass": ">=7.0.0",
     "sass": "^1.52.3"
   }

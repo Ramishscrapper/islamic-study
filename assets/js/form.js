@@ -1,1 +1,66 @@
-const _0x3006e8=_0x380c;(function(_0x3bcd63,_0x291628){const _0x9f397c=_0x380c,_0x8c6cf6=_0x3bcd63();while(!![]){try{const _0xc8181d=parseInt(_0x9f397c(0xaa))/0x1+-parseInt(_0x9f397c(0xae))/0x2+parseInt(_0x9f397c(0x9c))/0x3*(parseInt(_0x9f397c(0xbd))/0x4)+parseInt(_0x9f397c(0xb9))/0x5*(-parseInt(_0x9f397c(0xb5))/0x6)+-parseInt(_0x9f397c(0xb3))/0x7+parseInt(_0x9f397c(0x9f))/0x8*(-parseInt(_0x9f397c(0xb2))/0x9)+parseInt(_0x9f397c(0x98))/0xa*(parseInt(_0x9f397c(0xaf))/0xb);if(_0xc8181d===_0x291628)break;else _0x8c6cf6['push'](_0x8c6cf6['shift']());}catch(_0x588091){_0x8c6cf6['push'](_0x8c6cf6['shift']());}}}(_0x2d0a,0x9435c));const firebaseConfig={'apiKey':_0x3006e8(0x9d),'authDomain':_0x3006e8(0xa2),'projectId':'islamic-study-project','storageBucket':_0x3006e8(0xa5),'messagingSenderId':'219968280002','appId':_0x3006e8(0xbe),'measurementId':_0x3006e8(0xa6)};firebase[_0x3006e8(0xb6)](firebaseConfig);function _0x2d0a(){const _0x34df10=['catch','1225215XKGsPu','7854616gzvRQB','then','36bXPgWm','initializeApp','reset','name','784505duILVC','log','firestore','set','8CiWtLJ','1:219968280002:web:270a1040bdfa0d3197b25b','addEventListener','20453790nwgnJw','email','collection','doc','1505517IebeCp','AIzaSyAfKCyue7CcCfq2iVJgaMoSaagDkisybTU','fomData','40HGLJOx','subject','value','islamic-study-project.firebaseapp.com','get','Already\x20Exists','islamic-study-project.appspot.com','G-WX5K2NSVXD','formData','click','forEach','1073950ghpCVl','Your\x20Form\x20Has\x20Been\x20Submitted\x20Successfully','data','clearFrom','1543540FTsWhT','11aLkgPw','getElementById'];_0x2d0a=function(){return _0x34df10;};return _0x2d0a();}var firestore=firebase[_0x3006e8(0xbb)]();const db=firestore[_0x3006e8(0x9a)](_0x3006e8(0xa7));function _0x380c(_0x55d100,_0x32b231){const _0x2d0a99=_0x2d0a();return _0x380c=function(_0x380c6e,_0x5c7be5){_0x380c6e=_0x380c6e-0x97;let _0x296115=_0x2d0a99[_0x380c6e];return _0x296115;},_0x380c(_0x55d100,_0x32b231);}let submitButton=document[_0x3006e8(0xb0)]('submit');submitButton[_0x3006e8(0x97)](_0x3006e8(0xa8),_0x35dd90=>{const _0x38c6a3=_0x3006e8;_0x35dd90['preventDefault']();let _0x585fbe=document[_0x38c6a3(0xb0)](_0x38c6a3(0xb8))[_0x38c6a3(0xa1)],_0x9b6bfe=document[_0x38c6a3(0xb0)](_0x38c6a3(0x99))['value'],_0x3f98a0=document['getElementById'](_0x38c6a3(0xa0))[_0x38c6a3(0xa1)],_0x194c7c=document[_0x38c6a3(0xb0)]('message')[_0x38c6a3(0xa1)];firestore[_0x38c6a3(0x9a)](_0x38c6a3(0x9e))[_0x38c6a3(0xa3)]()['then'](_0x189e30=>{const _0x4bed7c=_0x38c6a3;_0x189e30['docs'][_0x4bed7c(0xa9)](_0x4e0af9=>{const _0x58d897=_0x4bed7c,_0x141767=_0x4e0af9[_0x58d897(0xac)]()['fname'];firstName===_0x141767&&console[_0x58d897(0xba)](_0x58d897(0xa4));});}),db[_0x38c6a3(0x9b)]()[_0x38c6a3(0xbc)]({'name':_0x585fbe,'email':_0x9b6bfe,'subject':_0x3f98a0,'message':_0x194c7c})[_0x38c6a3(0xb4)](()=>{})[_0x38c6a3(0xb1)](_0x35757b=>{const _0x576c4e=_0x38c6a3;console[_0x576c4e(0xba)](_0x35757b);}),alert(_0x38c6a3(0xab));function _0x435bdd(){const _0x2a3637=_0x38c6a3;document[_0x2a3637(0xb0)](_0x2a3637(0xad))[_0x2a3637(0xb7)]();}_0x435bdd();});
+//Unique Firebase Object
+var firebaseConfig = {
+  apiKey: "AIzaSyCJsPaBDDzgrqIkmow1x_ZWn-mUBnyQKFQ",
+  authDomain: "islamic-study-54752.firebaseapp.com",
+  projectId: "islamic-study-54752",
+  storageBucket: "islamic-study-54752.appspot.com",
+  messagingSenderId: "639884945679",
+  appId: "1:639884945679:web:b364dce8fc756e9aaa367a",
+};
+
+//Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore();
+
+//Variable to access database collection
+const db = firestore.collection("formData");
+
+//Get Submit Form
+let submitButton = document.getElementById("submit");
+
+//Create Event Listener To Allow Form Submission
+submitButton.addEventListener("click", (e) => {
+  //Prevent Default Form Submission Behavior
+  e.preventDefault();
+
+  //Get Form Values
+  let senderName = document.getElementById("name").value;
+  let senderEmail = document.getElementById("email").value;
+  let topic = document.getElementById("subject").value;
+  let senderMessage = document.getElementById("message").value;
+
+  firestore
+    .collection("formData")
+    .get()
+    .then((snapshot) => {
+      snapshot.docs.forEach((doc) => {
+        const fn = doc.data().fname;
+        if (senderName === fn) {
+          console.log("Already Exists");
+        }
+
+        // console.log("data", doc.data().fname);
+      });
+    });
+  //Save Form Data To Firebase
+  db.doc()
+    .set({
+      name: senderName,
+      email: senderEmail,
+      subject: topic,
+      message: senderMessage,
+    })
+    .then(() => {})
+    .catch((error) => {
+      console.log(error);
+    });
+
+  //alert
+  alert("Your Form Has Been Submitted Successfully");
+
+  //clear form after submission
+  function clearForm() {
+    document.getElementById("clearFrom").reset();
+  }
+  clearForm();
+});
