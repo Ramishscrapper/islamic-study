@@ -70,3 +70,37 @@
     }
   }
 }
+
+// Styles for dynamically loaded Surah content
+.ayahs-content {
+  padding: 1rem; // Add padding to the container of ayahs
+  max-height: 400px; // Example max-height, adjust as needed
+  overflow-y: auto;  // Make it scrollable if content exceeds max-height
+
+  .ayah {
+    margin-bottom: 1.5rem; // Increased margin for better separation
+    padding-bottom: 1rem; // Padding at the bottom of each ayah
+    border-bottom: 1px solid #eee; // Light border for separation
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .arabic-text {
+      text-align: right;
+      font-size: 1.6rem; // Slightly larger for Arabic
+      line-height: 1.8;
+      font-family: 'Noto Naskh Arabic', 'Times New Roman', serif; // Noto Naskh Arabic first, then fallback
+      margin-bottom: 0.5rem; // Space between Arabic and translation
+    }
+
+    .translation-text {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.6;
+      font-family: 'Noto Sans', Arial, sans-serif; // Noto Sans first, then fallback
+      color: #444; // Slightly softer color for translation
+    }
+  }
+}

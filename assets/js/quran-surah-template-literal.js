@@ -1,805 +1,3 @@
-var quranSurahData = [
-  {
-    number: 1,
-    name: "سُورَةُ ٱلْفَاتِحَةِ",
-    englishName: "Al-Faatiha",
-    englishNameTranslation: "The Opening",
-    numberOfAyahs: 7,
-  },
-  {
-    number: 2,
-    name: "سُورَةُ البَقَرَةِ",
-    englishName: "Al-Baqara",
-    englishNameTranslation: "The Cow",
-    numberOfAyahs: 286,
-  },
-  {
-    number: 3,
-    name: "سُورَةُ آلِ عِمۡرَانَ",
-    englishName: "Aal-i-Imraan",
-    englishNameTranslation: "The Family of Imraan",
-    numberOfAyahs: 200,
-  },
-  {
-    number: 4,
-    name: "سُورَةُ النِّسَاءِ",
-    englishName: "An-Nisaa",
-    englishNameTranslation: "The Women",
-    numberOfAyahs: 176,
-  },
-  {
-    number: 5,
-    name: "سُورَةُ المَائـِدَةِ",
-    englishName: "Al-Maaida",
-    englishNameTranslation: "The Table",
-    numberOfAyahs: 120,
-  },
-  {
-    number: 6,
-    name: "سُورَةُ الأَنۡعَامِ",
-    englishName: "Al-An'aam",
-    englishNameTranslation: "The Cattle",
-    numberOfAyahs: 165,
-  },
-  {
-    number: 7,
-    name: "سُورَةُ الأَعۡرَافِ",
-    englishName: "Al-A'raaf",
-    englishNameTranslation: "The Heights",
-    numberOfAyahs: 206,
-  },
-  {
-    number: 8,
-    name: "سُورَةُ الأَنفَالِ",
-    englishName: "Al-Anfaal",
-    englishNameTranslation: "The Spoils of War",
-    numberOfAyahs: 75,
-  },
-  {
-    number: 9,
-    name: "سُورَةُ التَّوۡبَةِ",
-    englishName: "At-Tawba",
-    englishNameTranslation: "The Repentance",
-    numberOfAyahs: 129,
-  },
-  {
-    number: 10,
-    name: "سُورَةُ يُونُسَ",
-    englishName: "Yunus",
-    englishNameTranslation: "Jonas",
-    numberOfAyahs: 109,
-  },
-  {
-    number: 11,
-    name: "سُورَةُ هُودٍ",
-    englishName: "Hud",
-    englishNameTranslation: "Hud",
-    numberOfAyahs: 123,
-  },
-  {
-    number: 12,
-    name: "سُورَةُ يُوسُفَ",
-    englishName: "Yusuf",
-    englishNameTranslation: "Joseph",
-    numberOfAyahs: 111,
-  },
-  {
-    number: 13,
-    name: "سُورَةُ الرَّعۡدِ",
-    englishName: "Ar-Ra'd",
-    englishNameTranslation: "The Thunder",
-    numberOfAyahs: 43,
-  },
-  {
-    number: 14,
-    name: "سُورَةُ إِبۡرَاهِيمَ",
-    englishName: "Ibrahim",
-    englishNameTranslation: "Abraham",
-    numberOfAyahs: 52,
-  },
-  {
-    number: 15,
-    name: "سُورَةُ الحِجۡرِ",
-    englishName: "Al-Hijr",
-    englishNameTranslation: "The Rock",
-    numberOfAyahs: 99,
-  },
-  {
-    number: 16,
-    name: "سُورَةُ النَّحۡلِ",
-    englishName: "An-Nahl",
-    englishNameTranslation: "The Bee",
-    numberOfAyahs: 128,
-  },
-  ,
-  {
-    number: 17,
-    name: "سُورَةُ الإِسۡرَاءِ",
-    englishName: "Al-Israa",
-    englishNameTranslation: "The Night Journey",
-    numberOfAyahs: 111,
-  },
-  {
-    number: 18,
-    name: "سُورَةُ الكَهۡفِ",
-    englishName: "Al-Kahf",
-    englishNameTranslation: "The Cave",
-    numberOfAyahs: 110,
-  },
-  {
-    number: 19,
-    name: "سُورَةُ مَرۡيَمَ",
-    englishName: "Maryam",
-    englishNameTranslation: "Mary",
-    numberOfAyahs: 98,
-  },
-  {
-    number: 20,
-    name: "سُورَةُ طه",
-    englishName: "Taa-Haa",
-    englishNameTranslation: "Taa-Haa",
-    numberOfAyahs: 135,
-  },
-  {
-    number: 21,
-    name: "سُورَةُ الأَنبِيَاءِ",
-    englishName: "Al-Anbiyaa",
-    englishNameTranslation: "The Prophets",
-    numberOfAyahs: 112,
-  },
-  {
-    number: 22,
-    name: "سُورَةُ الحَجِّ",
-    englishName: "Al-Hajj",
-    englishNameTranslation: "The Pilgrimage",
-    numberOfAyahs: 78,
-  },
-  {
-    number: 23,
-    name: "سُورَةُ المُؤۡمِنُونَ",
-    englishName: "Al-Muminoon",
-    englishNameTranslation: "The Believers",
-    numberOfAyahs: 118,
-  },
-  {
-    number: 24,
-    name: "سُورَةُ النُّورِ",
-    englishName: "An-Noor",
-    englishNameTranslation: "The Light",
-    numberOfAyahs: 64,
-  },
-  {
-    number: 25,
-    name: "سُورَةُ الفُرۡقَانِ",
-    englishName: "Al-Furqaan",
-    englishNameTranslation: "The Criterion",
-    numberOfAyahs: 77,
-  },
-  {
-    number: 26,
-    name: "سُورَةُ الشُّعَرَاءِ",
-    englishName: "Ash-Shu'araa",
-    englishNameTranslation: "The Poets",
-    numberOfAyahs: 227,
-  },
-  {
-    number: 27,
-    name: "سُورَةُ النَّمۡلِ",
-    englishName: "An-Naml",
-    englishNameTranslation: "The Ant",
-    numberOfAyahs: 93,
-  },
-  {
-    number: 28,
-    name: "سُورَةُ القَصَصِ",
-    englishName: "Al-Qasas",
-    englishNameTranslation: "The Stories",
-    numberOfAyahs: 88,
-  },
-  {
-    number: 29,
-    name: "سُورَةُ العَنكَبُوتِ",
-    englishName: "Al-Ankaboot",
-    englishNameTranslation: "The Spider",
-    numberOfAyahs: 69,
-  },
-  {
-    number: 30,
-    name: "سُورَةُ الرُّومِ",
-    englishName: "Ar-Room",
-    englishNameTranslation: "The Romans",
-    numberOfAyahs: 60,
-  },
-  {
-    number: 31,
-    name: "سُورَةُ لُقۡمَانَ",
-    englishName: "Luqman",
-    englishNameTranslation: "Luqman",
-    numberOfAyahs: 34,
-  },
-  {
-    number: 32,
-    name: "سُورَةُ السَّجۡدَةِ",
-    englishName: "As-Sajda",
-    englishNameTranslation: "The Prostration",
-    numberOfAyahs: 30,
-  },
-  {
-    number: 33,
-    name: "سُورَةُ الأَحۡزَابِ",
-    englishName: "Al-Ahzaab",
-    englishNameTranslation: "The Clans",
-    numberOfAyahs: 73,
-  },
-  {
-    number: 34,
-    name: "سُورَةُ سَبَإٍ",
-    englishName: "Saba",
-    englishNameTranslation: "Sheba",
-    numberOfAyahs: 54,
-  },
-  {
-    number: 35,
-    name: "سُورَةُ فَاطِرٍ",
-    englishName: "Faatir",
-    englishNameTranslation: "The Originator",
-    numberOfAyahs: 45,
-  },
-  {
-    number: 36,
-    name: "سُورَةُ يسٓ",
-    englishName: "Yaseen",
-    englishNameTranslation: "Yaseen",
-    numberOfAyahs: 83,
-  },
-  {
-    number: 37,
-    name: "سُورَةُ الصَّافَّاتِ",
-    englishName: "As-Saaffaat",
-    englishNameTranslation: "Those drawn up in Ranks",
-    numberOfAyahs: 182,
-  },
-  {
-    number: 38,
-    name: "سُورَةُ صٓ",
-    englishName: "Saad",
-    englishNameTranslation: "The letter Saad",
-    numberOfAyahs: 88,
-  },
-  {
-    number: 39,
-    name: "سُورَةُ الزُّمَرِ",
-    englishName: "Az-Zumar",
-    englishNameTranslation: "The Groups",
-    numberOfAyahs: 75,
-  },
-  {
-    number: 40,
-    name: "سُورَةُ غَافِرٍ",
-    englishName: "Ghafir",
-    englishNameTranslation: "The Forgiver",
-    numberOfAyahs: 85,
-  },
-  {
-    number: 41,
-    name: "سُورَةُ فُصِّلَتۡ",
-    englishName: "Fussilat",
-    englishNameTranslation: "Explained in detail",
-    numberOfAyahs: 54,
-  },
-  {
-    number: 42,
-    name: "سُورَةُ الشُّورَىٰ",
-    englishName: "Ash-Shura",
-    englishNameTranslation: "Consultation",
-    numberOfAyahs: 53,
-  },
-  {
-    number: 43,
-    name: "سُورَةُ الزُّخۡرُفِ",
-    englishName: "Az-Zukhruf",
-    englishNameTranslation: "Ornaments of gold",
-    numberOfAyahs: 89,
-  },
-  {
-    number: 44,
-    name: "سُورَةُ الدُّخَانِ",
-    englishName: "Ad-Dukhaan",
-    englishNameTranslation: "The Smoke",
-    numberOfAyahs: 59,
-  },
-  {
-    number: 45,
-    name: "سُورَةُ الجَاثِيَةِ",
-    englishName: "Al-Jaathiya",
-    englishNameTranslation: "Crouching",
-    numberOfAyahs: 37,
-  },
-  {
-    number: 46,
-    name: "سُورَةُ الأَحۡقَافِ",
-    englishName: "Al-Ahqaf",
-    englishNameTranslation: "The Dunes",
-    numberOfAyahs: 35,
-  },
-  {
-    number: 47,
-    name: "سُورَةُ مُحَمَّدٍ",
-    englishName: "Muhammad",
-    englishNameTranslation: "Muhammad",
-    numberOfAyahs: 38,
-  },
-  {
-    number: 48,
-    name: "سُورَةُ الفَتۡحِ",
-    englishName: "Al-Fath",
-    englishNameTranslation: "The Victory",
-    numberOfAyahs: 29,
-  },
-  {
-    number: 49,
-    name: "سُورَةُ الحُجُرَاتِ",
-    englishName: "Al-Hujuraat",
-    englishNameTranslation: "The Inner Apartments",
-    numberOfAyahs: 18,
-  },
-  {
-    number: 50,
-    name: "سُورَةُ قٓ",
-    englishName: "Qaaf",
-    englishNameTranslation: "The letter Qaaf",
-    numberOfAyahs: 45,
-  },
-  {
-    number: 51,
-    name: "سُورَةُ الذَّارِيَاتِ",
-    englishName: "Adh-Dhaariyat",
-    englishNameTranslation: "The Winnowing Winds",
-    numberOfAyahs: 60,
-  },
-  {
-    number: 52,
-    name: "سُورَةُ الطُّورِ",
-    englishName: "At-Tur",
-    englishNameTranslation: "The Mount",
-    numberOfAyahs: 49,
-  },
-  {
-    number: 53,
-    name: "سُورَةُ النَّجۡمِ",
-    englishName: "An-Najm",
-    englishNameTranslation: "The Star",
-    numberOfAyahs: 62,
-  },
-  {
-    number: 54,
-    name: "سُورَةُ القَمَرِ",
-    englishName: "Al-Qamar",
-    englishNameTranslation: "The Moon",
-    numberOfAyahs: 55,
-  },
-  {
-    number: 55,
-    name: "سُورَةُ الرَّحۡمَٰن",
-    englishName: "Ar-Rahmaan",
-    englishNameTranslation: "The Beneficent",
-    numberOfAyahs: 78,
-  },
-  {
-    number: 56,
-    name: "سُورَةُ الوَاقِعَةِ",
-    englishName: "Al-Waaqia",
-    englishNameTranslation: "The Inevitable",
-    numberOfAyahs: 96,
-  },
-  {
-    number: 57,
-    name: "سُورَةُ الحَدِيدِ",
-    englishName: "Al-Hadid",
-    englishNameTranslation: "The Iron",
-    numberOfAyahs: 29,
-  },
-  {
-    number: 58,
-    name: "سُورَةُ المُجَادلَةِ",
-    englishName: "Al-Mujaadila",
-    englishNameTranslation: "The Pleading Woman",
-    numberOfAyahs: 22,
-  },
-  {
-    number: 59,
-    name: "سُورَةُ الحَشۡرِ",
-    englishName: "Al-Hashr",
-    englishNameTranslation: "The Exile",
-    numberOfAyahs: 24,
-  },
-  {
-    number: 60,
-    name: "سُورَةُ المُمۡتَحنَةِ",
-    englishName: "Al-Mumtahana",
-    englishNameTranslation: "She that is to be examined",
-    numberOfAyahs: 13,
-  },
-  {
-    number: 61,
-    name: "سُورَةُ الصَّفِّ",
-    englishName: "As-Saff",
-    englishNameTranslation: "The Ranks",
-    numberOfAyahs: 14,
-  },
-  {
-    number: 62,
-    name: "سُورَةُ الجُمُعَةِ",
-    englishName: "Al-Jumu'a",
-    englishNameTranslation: "Friday",
-    numberOfAyahs: 11,
-  },
-  {
-    number: 63,
-    name: "سُورَةُ المُنَافِقُونَ",
-    englishName: "Al-Munaafiqoon",
-    englishNameTranslation: "The Hypocrites",
-    numberOfAyahs: 11,
-  },
-  {
-    number: 64,
-    name: "سُورَةُ التَّغَابُنِ",
-    englishName: "At-Taghaabun",
-    englishNameTranslation: "Mutual Disillusion",
-    numberOfAyahs: 18,
-  },
-  {
-    number: 65,
-    name: "سُورَةُ الطَّلَاقِ",
-    englishName: "At-Talaaq",
-    englishNameTranslation: "Divorce",
-    numberOfAyahs: 12,
-  },
-  {
-    number: 66,
-    name: "سُورَةُ التَّحۡرِيمِ",
-    englishName: "At-Tahrim",
-    englishNameTranslation: "The Prohibition",
-    numberOfAyahs: 12,
-  },
-  {
-    number: 67,
-    name: "سُورَةُ المُلۡكِ",
-    englishName: "Al-Mulk",
-    englishNameTranslation: "The Sovereignty",
-    numberOfAyahs: 30,
-  },
-  {
-    number: 68,
-    name: "سُورَةُ القَلَمِ",
-    englishName: "Al-Qalam",
-    englishNameTranslation: "The Pen",
-    numberOfAyahs: 52,
-  },
-  {
-    number: 69,
-    name: "سُورَةُ الحَاقَّةِ",
-    englishName: "Al-Haaqqa",
-    englishNameTranslation: "The Reality",
-    numberOfAyahs: 52,
-  },
-  {
-    number: 70,
-    name: "سُورَةُ المَعَارِجِ",
-    englishName: "Al-Ma'aarij",
-    englishNameTranslation: "The Ascending Stairways",
-    numberOfAyahs: 44,
-  },
-  {
-    number: 71,
-    name: "سُورَةُ نُوحٍ",
-    englishName: "Nooh",
-    englishNameTranslation: "Noah",
-    numberOfAyahs: 28,
-  },
-  {
-    number: 72,
-    name: "سُورَةُ الجِنِّ",
-    englishName: "Al-Jinn",
-    englishNameTranslation: "The Jinn",
-    numberOfAyahs: 28,
-  },
-  {
-    number: 73,
-    name: "سُورَةُ المُزَّمِّلِ",
-    englishName: "Al-Muzzammil",
-    englishNameTranslation: "The Enshrouded One",
-    numberOfAyahs: 20,
-  },
-  {
-    number: 74,
-    name: "سُورَةُ المُدَّثِّرِ",
-    englishName: "Al-Muddaththir",
-    englishNameTranslation: "The Cloaked One",
-    numberOfAyahs: 56,
-  },
-  {
-    number: 75,
-    name: "سُورَةُ القِيَامَةِ",
-    englishName: "Al-Qiyaama",
-    englishNameTranslation: "The Resurrection",
-    numberOfAyahs: 40,
-  },
-  {
-    number: 76,
-    name: "سُورَةُ الإِنسَانِ",
-    englishName: "Al-Insaan",
-    englishNameTranslation: "Man",
-    numberOfAyahs: 31,
-  },
-  {
-    number: 77,
-    name: "سُورَةُ المُرۡسَلَاتِ",
-    englishName: "Al-Mursalaat",
-    englishNameTranslation: "The Emissaries",
-    numberOfAyahs: 50,
-  },
-  {
-    number: 78,
-    name: "سُورَةُ النَّبَإِ",
-    englishName: "An-Naba",
-    englishNameTranslation: "The Announcement",
-    numberOfAyahs: 40,
-  },
-  {
-    number: 79,
-    name: "سُورَةُ النَّازِعَاتِ",
-    englishName: "An-Naazi'aat",
-    englishNameTranslation: "Those who drag forth",
-    numberOfAyahs: 46,
-  },
-  {
-    number: 80,
-    name: "سُورَةُ عَبَسَ",
-    englishName: "Abasa",
-    englishNameTranslation: "He frowned",
-    numberOfAyahs: 42,
-  },
-  {
-    number: 81,
-    name: "سُورَةُ التَّكۡوِيرِ",
-    englishName: "At-Takwir",
-    englishNameTranslation: "The Overthrowing",
-    numberOfAyahs: 29,
-  },
-  {
-    number: 82,
-    name: "سُورَةُ الانفِطَارِ",
-    englishName: "Al-Infitaar",
-    englishNameTranslation: "The Cleaving",
-    numberOfAyahs: 19,
-  },
-  {
-    number: 83,
-    name: "سُورَةُ المُطَفِّفِينَ",
-    englishName: "Al-Mutaffifin",
-    englishNameTranslation: "Defrauding",
-    numberOfAyahs: 36,
-  },
-  {
-    number: 84,
-    name: "سُورَةُ الانشِقَاقِ",
-    englishName: "Al-Inshiqaaq",
-    englishNameTranslation: "The Splitting Open",
-    numberOfAyahs: 25,
-  },
-  {
-    number: 85,
-    name: "سُورَةُ البُرُوجِ",
-    englishName: "Al-Burooj",
-    englishNameTranslation: "The Constellations",
-    numberOfAyahs: 22,
-  },
-  {
-    number: 86,
-    name: "سُورَةُ الطَّارِقِ",
-    englishName: "At-Taariq",
-    englishNameTranslation: "The Morning Star",
-    numberOfAyahs: 17,
-  },
-  {
-    number: 87,
-    name: "سُورَةُ الأَعۡلَىٰ",
-    englishName: "Al-A'laa",
-    englishNameTranslation: "The Most High",
-    numberOfAyahs: 19,
-  },
-  {
-    number: 88,
-    name: "سُورَةُ الغَاشِيَةِ",
-    englishName: "Al-Ghaashiya",
-    englishNameTranslation: "The Overwhelming",
-    numberOfAyahs: 26,
-  },
-  {
-    number: 89,
-    name: "سُورَةُ الفَجۡرِ",
-    englishName: "Al-Fajr",
-    englishNameTranslation: "The Dawn",
-    numberOfAyahs: 30,
-  },
-  {
-    number: 90,
-    name: "سُورَةُ البَلَدِ",
-    englishName: "Al-Balad",
-    englishNameTranslation: "The City",
-    numberOfAyahs: 20,
-  },
-  {
-    number: 91,
-    name: "سُورَةُ الشَّمۡسِ",
-    englishName: "Ash-Shams",
-    englishNameTranslation: "The Sun",
-    numberOfAyahs: 15,
-  },
-  {
-    number: 92,
-    name: "سُورَةُ اللَّيۡلِ",
-    englishName: "Al-Lail",
-    englishNameTranslation: "The Night",
-    numberOfAyahs: 21,
-  },
-  {
-    number: 93,
-    name: "سُورَةُ الضُّحَىٰ",
-    englishName: "Ad-Dhuhaa",
-    englishNameTranslation: "The Morning Hours",
-    numberOfAyahs: 11,
-  },
-  {
-    number: 94,
-    name: "سُورَةُ الشَّرۡحِ",
-    englishName: "Ash-Sharh",
-    englishNameTranslation: "The Consolation",
-    numberOfAyahs: 8,
-  },
-  {
-    number: 95,
-    name: "سُورَةُ التِّينِ",
-    englishName: "At-Tin",
-    englishNameTranslation: "The Fig",
-    numberOfAyahs: 8,
-  },
-  {
-    number: 96,
-    name: "سُورَةُ العَلَقِ",
-    englishName: "Al-Alaq",
-    englishNameTranslation: "The Clot",
-    numberOfAyahs: 19,
-  },
-  {
-    number: 97,
-    name: "سُورَةُ القَدۡرِ",
-    englishName: "Al-Qadr",
-    englishNameTranslation: "The Power, Fate",
-    numberOfAyahs: 5,
-  },
-  {
-    number: 98,
-    name: "سُورَةُ البَيِّنَةِ",
-    englishName: "Al-Bayyina",
-    englishNameTranslation: "The Evidence",
-    numberOfAyahs: 8,
-  },
-  {
-    number: 99,
-    name: "سُورَةُ الزَّلۡزَلَةِ",
-    englishName: "Az-Zalzala",
-    englishNameTranslation: "The Earthquake",
-    numberOfAyahs: 8,
-  },
-  {
-    number: 100,
-    name: "سُورَةُ العَادِيَاتِ",
-    englishName: "Al-Aadiyaat",
-    englishNameTranslation: "The Chargers",
-    numberOfAyahs: 11,
-  },
-  {
-    number: 101,
-    name: "سُورَةُ القَارِعَةِ",
-    englishName: "Al-Qaari'a",
-    englishNameTranslation: "The Calamity",
-    numberOfAyahs: 11,
-  },
-  {
-    number: 102,
-    name: "سُورَةُ التَّكَاثُرِ",
-    englishName: "At-Takaathur",
-    englishNameTranslation: "Competition",
-    numberOfAyahs: 8,
-  },
-  {
-    number: 103,
-    name: "سُورَةُ العَصۡرِ",
-    englishName: "Al-Asr",
-    englishNameTranslation: "The Declining Day, Epoch",
-    numberOfAyahs: 3,
-  },
-  {
-    number: 104,
-    name: "سُورَةُ الهُمَزَةِ",
-    englishName: "Al-Humaza",
-    englishNameTranslation: "The Traducer",
-    numberOfAyahs: 9,
-  },
-  {
-    number: 105,
-    name: "سُورَةُ الفِيلِ",
-    englishName: "Al-Fil",
-    englishNameTranslation: "The Elephant",
-    numberOfAyahs: 5,
-  },
-  {
-    number: 106,
-    name: "سُورَةُ قُرَيۡشٍ",
-    englishName: "Quraish",
-    englishNameTranslation: "Quraysh",
-    numberOfAyahs: 4,
-  },
-  {
-    number: 107,
-    name: "سُورَةُ المَاعُونِ",
-    englishName: "Al-Maa'un",
-    englishNameTranslation: "Almsgiving",
-    numberOfAyahs: 7,
-  },
-  {
-    number: 108,
-    name: "سُورَةُ الكَوۡثَرِ",
-    englishName: "Al-Kawthar",
-    englishNameTranslation: "Abundance",
-    numberOfAyahs: 3,
-  },
-  {
-    number: 109,
-    name: "سُورَةُ الكَافِرُونَ",
-    englishName: "Al-Kaafiroon",
-    englishNameTranslation: "The Disbelievers",
-    numberOfAyahs: 6,
-  },
-  {
-    number: 110,
-    name: "سُورَةُ النَّصۡرِ",
-    englishName: "An-Nasr",
-    englishNameTranslation: "Divine Support",
-    numberOfAyahs: 3,
-  },
-  {
-    number: 111,
-    name: "سُورَةُ المَسَدِ",
-    englishName: "Al-Masad",
-    englishNameTranslation: "The Palm Fibre",
-    numberOfAyahs: 5,
-  },
-  {
-    number: 112,
-    name: "سُورَةُ الإِخۡلَاصِ",
-    englishName: "Al-Ikhlaas",
-    englishNameTranslation: "Sincerity",
-    numberOfAyahs: 4,
-  },
-  {
-    number: 113,
-    name: "سُورَةُ الفَلَقِ",
-    englishName: "Al-Falaq",
-    englishNameTranslation: "The Dawn",
-    numberOfAyahs: 5,
-  },
-  {
-    number: 114,
-    name: "سُورَةُ النَّاسِ",
-    englishName: "An-Naas",
-    englishNameTranslation: "Mankind",
-    numberOfAyahs: 6,
-  },
-];
-
 var quranSurahTemplateStart = `
 <h2 class="quran-surah-title">Quran Surah</h2>
 `;
@@ -808,19 +6,126 @@ var quranSurahTemplateStart = `
 function quranSurahTemplate(surah) {
   return `
       <div class="quran-surah-with-tab">
-          <button class="surah surahName">${surah.number} : ${surah.name}</button>
+          <button class="surah surahName" data-surah-number="${surah.chapter}">${surah.chapter} : ${surah.name}</button>
           <div class="panel">
             <ul>
-              <li><span class="surah-details">Surah English Name : </span>${surah.englishName}</li>
-              <li><span class="surah-details">Surah English Name Translation : </span> ${surah.englishNameTranslation}</li>
-              <li><span class="surah-details">No. of Verses : </span> ${surah.numberOfAyahs}</li>
+              <li><span class="surah-details">Surah English Name : </span>${surah.english_name}</li>
+              <li><span class="surah-details">Surah English Name Translation : </span> ${surah.english_name_translation}</li>
+              <li><span class="surah-details">No. of Verses : </span> ${surah.verses_count}</li>
             </ul>
-            ${surah.iframe}
+            <div class="ayahs-content"></div>
           </div>
   `;
 }
 
-document.getElementById("quran-surah").innerHTML = `
-  ${quranSurahTemplateStart}
-  ${quranSurahData.map(quranSurahTemplate).join("")}
-`;
+// Function to fetch and display Surah content (Arabic and Translation)
+function loadSurahContent(surahNumber, panelElement) {
+  const ayahsContainer = panelElement.querySelector('.ayahs-content');
+  if (!ayahsContainer) {
+    console.error('Ayahs container not found in panel:', panelElement);
+    // Attempt to provide feedback even if the specific container is missing, though this indicates an HTML structure issue.
+    panelElement.innerHTML = '<p style="color: red;">Error: Could not find content area in this panel.</p>';
+    return;
+  }
+  ayahsContainer.innerHTML = '<p>Loading...</p>';
+
+  const arabicUrl = `https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/quran-uthmani/${surahNumber}.json`;
+  const translationUrl = `https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/eng-sahihinternational/${surahNumber}.json`;
+
+  const fetchArabic = fetch(arabicUrl).then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status} for Arabic text (Surah ${surahNumber})`);
+    }
+    return response.json();
+  });
+
+  const fetchTranslation = fetch(translationUrl).then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status} for Translation (Surah ${surahNumber})`);
+    }
+    return response.json();
+  });
+
+  Promise.all([fetchArabic, fetchTranslation])
+    .then(([arabicData, translationData]) => {
+      const arabicVerses = arabicData.chapter;
+      const translationVerses = translationData.chapter;
+
+      if (!arabicVerses || !translationVerses || arabicVerses.length !== translationVerses.length) {
+        ayahsContainer.innerHTML = '<p style="color: red;">Error: Data mismatch or missing verses when processing Surah ' + surahNumber + '.</p>';
+        console.error("Data mismatch or missing verses for Surah " + surahNumber, arabicData, translationData);
+        return;
+      }
+
+      let content = '';
+      if (arabicVerses.length === 0) { // Handle case of empty chapter data
+        content = '<p>No verses found for this Surah in the selected editions.</p>';
+      } else {
+        for (let i = 0; i < arabicVerses.length; i++) {
+          content += `
+            <div class="ayah">
+              <p class="arabic-text">${(arabicVerses[i] && arabicVerses[i].text) || 'Arabic text not available.'}</p>
+              <p class="translation-text">${(translationVerses[i] && translationVerses[i].text) || 'Translation not available.'}</p>
+            </div>
+          `;
+        }
+      }
+      ayahsContainer.innerHTML = content;
+    })
+    .catch(error => {
+      console.error(`Error fetching content for Surah ${surahNumber}:`, error);
+      ayahsContainer.innerHTML = `<p style="color: red;">Sorry, the content for this Surah could not be loaded. Please check your internet connection and try again.</p><p style="font-size: 0.8em; color: #555;">Details: ${error.message}</p>`;
+    });
+}
+
+// Fetch initial Surah list and render
+fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/info.json")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status} while fetching Surah list.`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    const surahs = data.chapters || data;
+    if (!surahs || surahs.length === 0) {
+      throw new Error("No Surah data received from API. The list may be empty or the API structure might have changed.");
+    }
+    const quranSurahContainer = document.getElementById("quran-surah");
+
+    quranSurahContainer.innerHTML = `
+      ${quranSurahTemplateStart}
+      ${surahs.map(quranSurahTemplate).join("")}
+    `;
+
+    quranSurahContainer.addEventListener('click', function(event) {
+      const targetButton = event.target.closest('.surahName');
+      if (targetButton) {
+        const surahNumber = targetButton.dataset.surahNumber;
+        const panel = targetButton.nextElementSibling;
+        if (surahNumber && panel) {
+          const ayahsContent = panel.querySelector('.ayahs-content');
+          // Simple check to avoid reloading if content is already there and not an error/loading message.
+          // This is a basic toggle-like behavior prevention.
+          if (ayahsContent && ayahsContent.children.length > 0 &&
+              !ayahsContent.innerHTML.includes('<p>Loading...</p>') &&
+              !ayahsContent.innerHTML.includes('<p style="color: red;">')) {
+            // console.log(`Content for Surah ${surahNumber} appears to be loaded. Toggle or do nothing.`);
+            // return; // Uncomment to prevent reload
+          }
+          loadSurahContent(surahNumber, panel);
+        }
+      }
+    });
+  })
+  .catch(error => {
+    console.error("Error fetching Surah list:", error);
+    const quranSurahContainer = document.getElementById("quran-surah");
+    if (quranSurahContainer) {
+        quranSurahContainer.innerHTML = `
+        ${quranSurahTemplateStart}
+        <p style="color: red;">Failed to load Surah information. Please check your connection and try again.</p>
+        <p style="font-size: 0.8em; color: #555;">Details: ${error.message}</p>
+      `;
+    }
+  });
